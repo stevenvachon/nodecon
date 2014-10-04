@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "nodecon",
+  "description": "A Node.js debugging console.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stevenvachon/nodecon.git"
+  },
+  "devDependencies": {
+    "browserify": "^6.0",
+    "node-webkit-builder": "~0.1"
+  },
+  "scripts": {
+    "_build": "node build 0.10.5",
+    "_install": "nwbuild --version 0.10.5 --forceDownload && bower install && cd src && npm install --production",
+    "run": "nwbuild --version 0.10.5 --run src/",
+    "_test": "mocha src/test/ --bail --reporter spec --check-leaks"
+  }
+}

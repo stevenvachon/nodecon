@@ -1,4 +1,4 @@
-nodecon
-=======
+# NodeCon
+> A Node.js debugging console for Mac/Windows/Linux.
 
-A Node.js debugging console (Mac / Windows / Linux)
+This currently does not work.
