@@ -6,44 +6,10 @@ html,body
 
 
 
-#debuggerConsole
-{
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-}
-
-#debuggerConsole > iframe
+iframe
 {
 	border: 0;
 	height: calc( 100% + 56px );	/* weinre toolbar height */
 	margin-top: -56px;
 	width: 100%;
-}
-
-
-
-#shellConsole > .log
-{
-	font-family: Courier New;
-	white-space: pre;
-}
-
-#shellConsole > input[type=text]
-{
-	
-}
-
-
-
-.hidden
-{
-	display: none;
-}
-
-.visible
-{
-	display: block;
 }

@@ -1,43 +1,13 @@
 <html>
 <head>
-<title>NodeCon</title>
+<title>NodeCon / Khansole</title>
 <link rel="stylesheet" href="lib/frontend/stylesheet.css"/>
 <body>
 
-<div id="toolbar">
-	<button name="shell" title="Back to shell">Shell</button>
-</div>
-
-<div id="shellConsole">
-	<div class="log"></div>
-	<input type="text" name="command"/>
-</div>
-
-<div id="debuggerConsole"></div>
-
-<script>
-	global.requireNode = global.require;
-	window.requireNode = window.require;
-	
-	// Avoid page change on errors
-	process.on("uncaughtException", function(e){});
-</script>
-<script>
-	window.views = {};
-</script>
-<script src="lib/frontend/vendors/ansi_up.js"></script>
+<script src="lib/setup.js"></script>
+<!--<script src="lib/frontend/vendors/ansi_up.js"></script>-->
 <script src="lib/frontend/debuggerConsole.js"></script>
-<script src="lib/frontend/shellConsole.js"></script>
-<script src="lib/frontend/state.js"></script>
-<script>
-	var debuggerProxy = requireNode("./lib/backend/debuggerProxy");
-	
-	debuggerProxy.start({ httpPort:8080, boundHost:"localhost" });
-	
-	views.debuggerConsole.add();
-	
-	window.state = "shellConsole";
-</script>
+<script src="lib/init.js"></script>
 
 </body>
 </html>

@@ -2,13 +2,12 @@
   "private": true,
   "name": "nodecon",
   "description": "A Node.js debugging console.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/stevenvachon/nodecon.git"
   },
   "devDependencies": {
-    "browserify": "^6.0",
     "node-webkit-builder": "~0.1"
   },
   "scripts": {

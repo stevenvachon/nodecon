@@ -1,3 +1,4 @@
+"use strict";
 var child_process = require("child_process");
 var path = require("path");
 var weinre = require("weinre");

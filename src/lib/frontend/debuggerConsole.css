@@ -1,0 +1,70 @@
+#console-messages .console-user-command
+{
+	display: flex;
+	padding-left: 0;
+}
+
+#console-prompt
+{
+	padding-left: 0;
+}
+
+#console-messages .console-user-command::before,
+#console-prompt::before
+{
+	background-position: right .25em;
+	background-repeat: no-repeat;
+	height: auto;
+	margin: 0 .4em 0 0;
+	padding: 0 .9em 0 7px;
+	position: static;
+	white-space: nowrap;
+	width: auto;
+}
+
+#console-messages .console-user-command::before
+{
+	color: gray;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+#console-prompt::before
+{
+	color: #4097f9;
+	display: inline;
+}
+
+#console-messages .console-user-command.nodecon-state-node::before,
+#console-prompt.nodecon-state-node::before
+{
+	content: "node";
+}
+
+#console-messages .console-user-command.nodecon-state-shell::before,
+#console-prompt.nodecon-state-shell::before
+{
+	content: "shell";
+}
+
+
+
+#console-messages .console-user-command .console-message-text
+{
+	flex-grow: 1;
+	width: 100%;
+}
+
+
+
+#console-status-bar-item
+{
+	display: none;	
+}
+
+
+
+#toolbar
+{
+	visibility: hidden;
+}
