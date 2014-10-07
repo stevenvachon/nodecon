@@ -7,7 +7,23 @@
 #console-prompt
 {
 	padding-left: 0;
+	min-width: 1em;
 }
+
+#console-prompt hr
+{
+	border: 0;
+	display: inline;
+}
+
+/*#console-prompt:focus::after
+{
+	background-color: silver;
+	content: " ";
+	display: inline;
+	height: 1em;
+	width: .5em;
+}*/
 
 #console-messages .console-user-command::before,
 #console-prompt::before
